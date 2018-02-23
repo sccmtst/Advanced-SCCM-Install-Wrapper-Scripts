@@ -4,7 +4,7 @@ Install software with SCCM
 
 .DESCRIPTION
 This Scrip it meant to be used with my Install-Wrapper Script. You can get that script from 
-http://www.sccmtst.com/2017/11/advanced-software-install-wrapper-script.html
+http://www.sccmtst.com/2018/02/advanced-sccm-install-wrapper-scripts.html
 
 This script will allow you to install multiple peaces of software. To use the script first create 
 a script for each of your software installs using the Install-Wrapper script. Then add each script 
