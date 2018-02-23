@@ -78,9 +78,14 @@ function Exit-Script()
     Exit $script:Returncode    
 }
 
+Function Install-PreConfig
+{
+    Add-LogEntry "Starting Install Pre Configuration" "1"
+}
+
 function Uninstall-OldVersions() 
 {
-    #Some software where will not install with out a reboot after uninstalling the old software
+    #Some software will not install with out a reboot after uninstalling the old software
     Add-LogEntry "Uninstalling old versions of the software." "1"
     IF (!(Get-WmiObject win32_Product | Where-Object IdentifyingNumber -EQ $UninstallAPPID)) 
     {
@@ -184,6 +189,7 @@ function Get-HardwareInventory()
 
 #Actions: Uncomment the actions you want to run
 New-LogFile
+#Install-PreConfig
 Uninstall-OldVersions
 #Remove-Shortcuts
 Install-Software
