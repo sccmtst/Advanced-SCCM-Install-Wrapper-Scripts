@@ -6,3 +6,5 @@ then if you need install other software as part of this deployment build another
 to the Multi-Install-Wrapper script. The Multi-Install-Wrapper script will run each Install-Wrapper script and provide detailed info of 
 the install proccess. Then to supliment the Install proccess I have Uninstall-Wrapper script that you can use as the uninstall commands for the SCCM 
 Application deployment. 
+
+For more inforamtion visit http://sccmtst.com
